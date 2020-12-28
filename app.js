@@ -51,9 +51,9 @@ function validatePhone() {
 
 
     const phone = document.getElementById('phone');
-    const re = /^(0047|\+47 | 47)?[2-9]\d{7}$/;
+    const re = /^(0047|\+47|47)?[2-9]\d{7}$/;
 
-    if (!re.test(zip.value)) {
+    if (!re.test(phone.value)) {
         phone.classList.add('is-invalid')
 
     } else {
